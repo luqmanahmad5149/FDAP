@@ -1,0 +1,135 @@
+.cards__monitor {
+  padding: 4rem;
+  background: #fff;
+}
+
+h1 {
+  text-align: center;
+}
+
+.cards__container__monitor {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.cards__wrapper__monitor {
+  position: relative;
+  margin: 50px 0 45px;
+}
+
+.cards__items__monitor {
+  margin-bottom: 30px;
+}
+
+.cards__item__monitor {
+  display: flex;
+  flex: 1;
+  margin: 0 1rem;
+  border-radius: 5px;
+}
+
+.cards__item__monitor__link {
+  display: flex;
+  flex-flow: column;
+  box-shadow: 0 6px 20px rgba(56, 126, 255, 0.282);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.cards__item__monitor__pic-wrap {
+  padding: 5px;
+  position: relative;
+  overflow: hidden;
+  background-color: #160c2e;
+}
+
+.thingspeakAPI {
+  width: 450px;
+  height: 260px;
+}
+
+.fade-img {
+  animation-name: fade-img;
+  animation-duration: 2s;
+}
+
+.cards__item__monitor__pic-wrap::after {
+  position: absolute;
+  bottom: 0;
+  margin-left: 10px;
+  padding: 6px 8px;
+  max-width: calc((100%) - 60px);
+  font-weight: 700;
+  color: #fff;
+  background-color: #1f98f4;
+  box-sizing: border-box;
+}
+
+.cards__item__monitor__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  transition: all 0.2s linear;
+}
+
+.cards__item__monitor__img:hover {
+  transform: scale(1.1);
+}
+
+.cards__item__monitor__info {
+  padding: 15px 19px 15px;
+}
+
+.cards__item__monitor__text {
+  color: #242422;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.waterlevel_legend {
+  box-shadow: 0 6px 20px rgba(56, 126, 255, 0.282);
+  margin-right: 40px;
+  float: right;
+  padding: 2px;
+  width: 210px;
+  height: 150px;
+  border: solid #242424;
+}
+
+@media only screen and (min-width: 1200px) {
+  .content__blog__container {
+    width: 84%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cards__items__monitor {
+    display: flex;
+  }
+  .cards__item__monitor {
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .cards__items__monitor {
+    margin-bottom: 2rem;
+  }
+  .cards__item__monitor {
+    margin-bottom: 2rem;
+  }
+}
